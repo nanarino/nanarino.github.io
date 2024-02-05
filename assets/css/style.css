@@ -1,0 +1,339 @@
+@import "https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap";
+@font-face {
+  font-family: "JasonHandwriting8p";
+  src: url("/assets/font/JasonHandwriting8p.ttf");
+}
+
+#nav:empty + wired-divider {
+  display: none;
+}
+
+:root {
+  --ch: 360;
+  color: oklch(0.4 0.15 var(--ch));
+  --code-color: oklch(0.5 0.2 var(--ch));
+  --code-background-color: oklch(0.9 0.05 calc(var(--ch) - 12));
+  --link-code-color: oklch(0.667 0.2 calc(var(--ch) - 24));
+  --border-color: oklch(0.75 0.13 var(--ch));
+  --quote-background-color: oklch(0.2 0.08 var(--ch) / 0.5);
+  --wired-link-decoration-color: oklch(0.667 0.25 calc(var(--ch) - 12));
+  --wired-divider-color: oklch(0.5 0.2 calc(var(--ch) - 18));
+  --wrapper-background-color: #fff;
+  --body-background-color: #fff;
+  --wrapper-padding: 3em 3em 8em 3em;
+  font-family: "Gloria Hallelujah", JasonHandwriting8p;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+::selection {
+  color: #6264;
+}
+
+body {
+  margin: 0;
+  background-color: var(--body-background-color);
+}
+.grid {
+  display: grid;
+}
+
+a:link,
+a:active,
+a:visited {
+  color: var(--wired-link-decoration-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+wired-divider {
+  color: var(--wired-divider-color);
+}
+wired-card[fill] {
+  --wired-card-fill-color: var(--wired-link-decoration-color);
+  color: #fff;
+}
+
+header#top h1 {
+  margin: 0 0 0 -4px;
+  font-weight: 100;
+  font-size: 80px;
+}
+
+header#top p {
+  margin: 0;
+  font-weight: bold;
+}
+
+header#top a:link,
+header#top a:active,
+header#top a:visited,
+header#top a:hover {
+  color: var(--color);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0;
+}
+
+nav ul {
+  margin: 1.5rem 0 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-flex;
+  gap: 1em;
+}
+
+footer {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  position: absolute;
+  bottom: 5em;
+  left: 3em;
+  right: 3em;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+pre {
+  font-family: JasonHandwriting8p;
+}
+code {
+  font-family: JasonHandwriting8p;
+  color: var(--code-color);
+}
+
+pre code {
+  display: block;
+  box-sizing: border-box;
+  padding: 0.3rem 0.4rem;
+  border-left: 4px solid var(--border-color);
+  color: var(--color);
+  background: var(--code-background-color);
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+  color: var(--color);
+  font-weight: bold;
+}
+
+a:link code,
+a:hover code,
+a:visited code,
+a:active code {
+  color: var(--link-code-color);
+}
+
+#wrapper {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: var(--wrapper-padding);
+  width: 1280px;
+  min-height: 100vh;
+  background: var(--wrapper-background-color);
+}
+
+article h1 {
+  margin: 0.5rem 0;
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+article header p {
+  margin: 0;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: 0.8;
+}
+
+article > div p,
+article > div ul,
+article > div ol {
+  line-height: 1.8em;
+}
+
+article > div img,
+article > div svg {
+  max-width: 100%;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding: 0 0.75em;
+  border: 1px solid transparent;
+}
+
+blockquote p {
+  margin: 0.5em 0;
+}
+
+blockquote p:not(.title) {
+  font-size: 0.9em;
+}
+
+blockquote p.title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+blockquote.note {
+  background-color: var(--quote-background-color);
+}
+
+article.list > div > ul {
+  list-style: none;
+  display: grid;
+  padding: 0;
+  gap: 1em;
+}
+@media screen and (min-width: 768px) {
+  article.list > div > ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1280px) {
+  article.list > div > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+article.list li.article h2 {
+  margin-bottom: 0.5rem;
+}
+
+article.list p.post-preview {
+  margin: 0.5em 0 1.5em 0;
+  opacity: 0.8;
+}
+
+article.list ul.pagination {
+  display: inline-flex;
+  gap: 0.5em;
+  padding: 0;
+  list-style: none;
+}
+
+p.post-info {
+  margin: 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+p.post-info .tags {
+  white-space: nowrap;
+}
+
+table {
+  border: 1px solid var(--border-color);
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid var(--border-color);
+  padding: 5px 11px;
+}
+
+table th {
+  border-bottom-width: 2px;
+}
+
+table tr:nth-of-type(2n) td {
+  background: var(--code-background-color);
+}
+
+kbd {
+  padding: 0 4px;
+  background: var(--code-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  box-shadow: 0 2px 0 var(--border-color);
+  font-family: JasonHandwriting8p;
+  font-size: 0.8em;
+}
+
+ul.serum-toc {
+  display: inline-block;
+  margin: 0;
+  padding: 0.25em 0.5em;
+  border: 1px solid var(--border-color);
+  list-style-type: none;
+}
+
+ul.serum-toc li.indent-0 {
+  margin-left: 0em;
+}
+ul.serum-toc li.indent-1 {
+  margin-left: 1em;
+}
+ul.serum-toc li.indent-2 {
+  margin-left: 2em;
+}
+ul.serum-toc li.indent-3 {
+  margin-left: 3em;
+}
+ul.serum-toc li.indent-4 {
+  margin-left: 4em;
+}
+ul.serum-toc li.indent-5 {
+  margin-left: 5em;
+}
+
+ul.serum-toc li span.number {
+  color: var(--color);
+  margin-right: 0.5em;
+}
+
+@media screen and (max-width: 1279px) {
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  #wrapper {
+    width: 100%;
+    --wrapper-padding: 1em 1em 8em 1em;
+  }
+
+  footer {
+    left: 1em;
+    right: 1em;
+  }
+
+  header#top h1 {
+    margin: 0;
+    font-size: 60px;
+  }
+
+  header#top p {
+    font-size: 0.9rem;
+  }
+
+  article > div ul,
+  article > div ol {
+    padding-left: 24px;
+  }
+}
