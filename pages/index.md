@@ -1,5 +1,8 @@
 ---
-title: Welcome
+title: ☘
 ---
 
-*Hello, world!*
+Hello, I'm kogawananari.
+
+Rhythm game enthusiast & Painter without talent.
+

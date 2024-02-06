@@ -20,7 +20,7 @@ erl_crash.dump
 *.ez
 
 # Ignore package tarball (built via "mix hex.build").
-nanarino_github_io-*.tar
+nanarinopage-*.tar
 
 # The default directory which Serum builds the website into.
 /site/
