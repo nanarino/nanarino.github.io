@@ -10,7 +10,7 @@
 ::
 
     # 安装和编译依赖
-    mix do deps.get, deps.compile
+    mix deps.get, deps.compile
     # 运行开发服务器
     mix serum.server
 

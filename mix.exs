@@ -1,4 +1,4 @@
-defmodule Nanarinoage.MixFile do
+defmodule Nanarino.Page do
   use Mix.Project
 
   def project do
@@ -20,7 +20,7 @@ defmodule Nanarinoage.MixFile do
   defp deps do
     [
       {:serum, "~> 1.5"},
-      {:serum_theme_essence, "~> 1.0"}
+      {:serum_theme_wired, git: "https://github.com/holy-two/serum-theme-wired.git", branch: "main" }
     ]
   end
 end

@@ -1,5 +1,5 @@
 ---
-title: ☘
+title:
 ---
 
 Hello, I'm kogawananari.
