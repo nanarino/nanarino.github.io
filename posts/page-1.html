@@ -4,9 +4,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>All Posts - ☘</title>
+    <title>All Posts-☘</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/prism.css">
+    <script type="importmap">
+      {
+  "imports": {
+    "wired-elements": "https://ga.jspm.io/npm:wired-elements@3.0.0-rc.6/lib/wired-elements.js"
+  },
+  "scopes": {
+    "https://ga.jspm.io/": {
+      "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.6.3/development/reactive-element.js",
+      "@lit/reactive-element/decorators/": "https://ga.jspm.io/npm:@lit/reactive-element@1.6.3/development/decorators/",
+      "hachure-fill": "https://ga.jspm.io/npm:hachure-fill@0.5.2/bin/hachure.js",
+      "lit": "https://ga.jspm.io/npm:lit@2.8.0/index.js",
+      "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@3.3.3/development/lit-element.js",
+      "lit-html": "https://ga.jspm.io/npm:lit-html@2.8.0/development/lit-html.js",
+      "lit-html/is-server.js": "https://ga.jspm.io/npm:lit-html@2.8.0/development/is-server.js",
+      "lit/decorators.js": "https://ga.jspm.io/npm:lit@2.8.0/decorators.js",
+      "path-data-parser": "https://ga.jspm.io/npm:path-data-parser@0.1.0/lib/index.js",
+      "roughjs/bin/fillers/zigzag-filler": "https://ga.jspm.io/npm:roughjs@4.4.5/bin/fillers/zigzag-filler.js",
+      "roughjs/bin/renderer": "https://ga.jspm.io/npm:roughjs@4.4.5/bin/renderer.js"
+    }
+  }
+}
+    </script>
+    <script type="module">
+      import "wired-elements";
+    </script>
+    <script src="/assets/js/prism.js"></script>
     
 <!--==========================================-->
 <!-- Override "includes/head-extras.html.eex" -->
@@ -26,15 +52,12 @@
   <li><a href="/posts">Posts</a></li>
 </ul>
 </nav>
-      <hr>
-      <main><article class="list"><header><h1 id="all-posts">All Posts</h1></header><div><ul><li class="article"><h2 id="2024年旧正月放假通知-"><a href="/posts/2024-01-17.html">2024年旧正月放假通知</a><br/></h2><p class="post-date">
-            Wednesday, 17 Jan 2024
-            
-              <span class="tags">
-                Tags:
-                
-                  <a class="tag" href="/tags/假期">假期</a></span></p><p class="post-preview">说好的 gap decade 还是找了个班上。 春节休假时间订于2月7日-2月19日，共计13天。节前2月4日（周日）正常上班。望知悉…</p></li></ul></div><ul class="pagination"><li><span class="page-button current">1</span></li></ul></article></main>
-      <hr>
+      <wired-divider></wired-divider>
+      <main><article class="list"><header><h1 id="all-posts">All Posts</h1></header><div><ul><li class="article" elevation="3"><wired-card class="grid"><h2 id="2024-chinese-new-year-"><a href="/posts/2024-02-07.html">2024 Chinese New Year</a><br/></h2><p class="post-info"><span class="date">Wednesday, 17 Jan 2024</span><span class="tags">
+                  Tags:
+                  
+                    <wired-link class="tag" href="/tags/vacation">vacation</wired-link></span></p><p class="post-preview"></p></wired-card></li></ul></div><ul class="pagination"><li><wired-card fill="var(--wired-card-fill-color)" aria-selected="true">1</wired-card></li></ul></article></main>
+      <wired-divider></wired-divider>
       <footer>
         
 <!--=====================================-->
@@ -43,12 +66,11 @@
 <!--=====================================-->
 
         <p>
-          Powered by <a href="https://github.com/Dalgona/Serum">Serum</a> v1.5.1,
-          with <a href="https://github.com/Dalgona/serum-theme-essence">Essence</a> theme
+          Powered by <wired-link href="https://github.com/Dalgona/Serum">Serum</wired-link> v1.5.1,
+          with <wired-link href="https://github.com/holy-two/serum-theme-wired">Wired</wired-link> theme
         </p>
       </footer>
     </div>
-    <script src="/assets/js/prism.js"></script>
   </body>
 </html>
 <script>

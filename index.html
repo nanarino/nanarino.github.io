@@ -7,6 +7,32 @@
     <title>☘</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/prism.css">
+    <script type="importmap">
+      {
+  "imports": {
+    "wired-elements": "https://ga.jspm.io/npm:wired-elements@3.0.0-rc.6/lib/wired-elements.js"
+  },
+  "scopes": {
+    "https://ga.jspm.io/": {
+      "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.6.3/development/reactive-element.js",
+      "@lit/reactive-element/decorators/": "https://ga.jspm.io/npm:@lit/reactive-element@1.6.3/development/decorators/",
+      "hachure-fill": "https://ga.jspm.io/npm:hachure-fill@0.5.2/bin/hachure.js",
+      "lit": "https://ga.jspm.io/npm:lit@2.8.0/index.js",
+      "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@3.3.3/development/lit-element.js",
+      "lit-html": "https://ga.jspm.io/npm:lit-html@2.8.0/development/lit-html.js",
+      "lit-html/is-server.js": "https://ga.jspm.io/npm:lit-html@2.8.0/development/is-server.js",
+      "lit/decorators.js": "https://ga.jspm.io/npm:lit@2.8.0/decorators.js",
+      "path-data-parser": "https://ga.jspm.io/npm:path-data-parser@0.1.0/lib/index.js",
+      "roughjs/bin/fillers/zigzag-filler": "https://ga.jspm.io/npm:roughjs@4.4.5/bin/fillers/zigzag-filler.js",
+      "roughjs/bin/renderer": "https://ga.jspm.io/npm:roughjs@4.4.5/bin/renderer.js"
+    }
+  }
+}
+    </script>
+    <script type="module">
+      import "wired-elements";
+    </script>
+    <script src="/assets/js/prism.js"></script>
     
 <!--==========================================-->
 <!-- Override "includes/head-extras.html.eex" -->
@@ -26,9 +52,9 @@
   <li><a href="/posts">Posts</a></li>
 </ul>
 </nav>
-      <hr>
+      <wired-divider></wired-divider>
       <main><article><div><p>Hello, I’m kogawananari.</p><p>Rhythm game enthusiast &amp; Painter without talent.</p></div></article></main>
-      <hr>
+      <wired-divider></wired-divider>
       <footer>
         
 <!--=====================================-->
@@ -37,12 +63,11 @@
 <!--=====================================-->
 
         <p>
-          Powered by <a href="https://github.com/Dalgona/Serum">Serum</a> v1.5.1,
-          with <a href="https://github.com/Dalgona/serum-theme-essence">Essence</a> theme
+          Powered by <wired-link href="https://github.com/Dalgona/Serum">Serum</wired-link> v1.5.1,
+          with <wired-link href="https://github.com/holy-two/serum-theme-wired">Wired</wired-link> theme
         </p>
       </footer>
     </div>
-    <script src="/assets/js/prism.js"></script>
   </body>
 </html>
 <script>
