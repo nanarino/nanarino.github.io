@@ -11,6 +11,7 @@
   --wired-divider-color: #757;
   --wrapper-background-color: #fff;
   --body-background-color: #fff;
+  --wrapper-padding: 3em 3em 8em 3em;
   font-family: "Gloria Hallelujah", cursive;
   font-size: 16px;
   line-height: 1.8;
@@ -88,6 +89,10 @@ nav ul li {
 footer {
   font-size: 0.75rem;
   opacity: 0.75;
+  position: absolute;
+  bottom: 5em;
+  left: 3em;
+  right: 3em;
 }
 
 footer p {
@@ -126,9 +131,10 @@ a:active code {
 }
 
 #wrapper {
+  position: relative;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 50px;
+  padding: var(--wrapper-padding);
   width: 1280px;
   min-height: 100vh;
   background: var(--wrapper-background-color);
@@ -298,7 +304,12 @@ ul.serum-toc li span.number {
 
   #wrapper {
     width: 100%;
-    padding: 20px;
+    --wrapper-padding: 1em 1em 8em 1em;
+  }
+
+  footer {
+    left: 1em;
+    right: 1em;
   }
 
   header#top h1 {
