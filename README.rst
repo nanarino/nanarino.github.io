@@ -22,3 +22,7 @@
     # 构建页面 输出到site目录
     mix serum.build
 
+
+借物
+======
+* font: `悠哉 <https://github.com/lxgw/yozai-font>`_
