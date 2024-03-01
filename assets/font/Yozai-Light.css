@@ -1,0 +1,11 @@
+/**
+ * https://github.com/lxgw/yozai-font/
+ */
+@font-face {
+  font-family: "Yozai-Light";
+  src: url("/assets/font/Yozai-Light.ttf");
+}
+
+:root {
+  font-family: "Gloria Hallelujah", "Yozai-Light", cursive !important;
+}
