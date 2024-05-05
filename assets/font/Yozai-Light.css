@@ -6,6 +6,6 @@
   src: url("/assets/font/Yozai-Light.ttf");
 }
 
-:root {
-  font-family: "Gloria Hallelujah", "Yozai-Light", cursive !important;
+article.post > :last-child {
+  font-family: "Yozai-Light", cursive !important;
 }
