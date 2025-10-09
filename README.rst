@@ -1,6 +1,6 @@
-===============
-☘ nanarinopage
-===============
+==============
+☘ nanarino.art
+==============
 
 .. highlight:: bash
 
@@ -39,8 +39,3 @@
 
     # 構建 輸出到site目錄
     mix serum.build
-
-
-借物
-======
-* font: `悠哉 <https://github.com/lxgw/yozai-font>`_
