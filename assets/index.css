@@ -1,0 +1,12 @@
+/** 
+ * @nanarino/stylus外的 自订样式
+ * 背景色默认 --bg-color, #1111；
+ */
+
+@import "https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap";
+:root {
+  zoom: 1.25;
+  --font-family-base: "Gloria Hallelujah";
+  padding: 1em 1em 8em 1em;
+  --hue-primary: 360;
+}
